@@ -1,0 +1,25 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input-title {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field::placeholder {
+    color: #DEDEDE;
+  }
+  

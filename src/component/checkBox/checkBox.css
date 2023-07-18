@@ -1,0 +1,19 @@
+.checkbox-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .checkbox-line label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .checkbox-line a {
+    color: #FFF; /* Ajustez selon votre choix de couleur de lien */
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.8px;
+  }
+  
