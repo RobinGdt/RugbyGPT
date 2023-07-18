@@ -38,7 +38,7 @@ function HomePage() {
           <div className="connexionForm">
             <Input title="Nom d’utilisateur ou e-mail" placeholder="exemple@mail.com" />
             <Input title="Mot de passe" placeholder="Mot de passe" />
-            <CheckboxLine></CheckboxLine>
+            <CheckboxLine texte="Se souvenir de moi"forgot="Mot de passe oublié?"></CheckboxLine>
             <Button text="Connexion" logoSrc="" className="button" backgroundColor="#5BAB2C" color="#fff"/>
           </div>
         </div>

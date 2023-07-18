@@ -3,6 +3,7 @@ import './signup.css'
 import Button from '../../component/button/button';
 import Input from '../../component/formInput/formInput';
 import SelectInput from '../../component/formInputSelector/formInputSelector';
+import CheckboxLine from '../../component/checkBox/checkBox';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function SignupPage() {
@@ -49,7 +50,18 @@ function SignupPage() {
             <Input title="Nom *" placeholder="Nom" />
             <Input title="Prénom *" placeholder="Prénom" />
             <Input title="Média *" placeholder="Média" />
-            <SelectInput title="Métier" options={['Journaliste', 'Photographe', 'Reporter', 'Cadreur', 'Ingénieur du son', 'Commentateur']}/>
+            <SelectInput title="Métier" placeholder="Métier" options={['Journaliste', 'Photographe', 'Reporter', 'Cadreur', 'Ingénieur du son', 'Commentateur']}/>
+          </div>
+          <div className="preferences">
+            <div className="preferencesDetailTitle">3. Vos préférences de communication</div>
+              <div className="checkBox">
+                <CheckboxLine className="checkboxTexte" texte="J’ai lu et compris ce document de World Rugby Politique de confidentialité" forgot=""></CheckboxLine>
+                <CheckboxLine className="checkboxTexte" texte="J’aimerai que la Coupe du Monde de rugby m’envoie des infos, des renseignements, des promotions et des offres spéciales par courrier électronique" forgot=""></CheckboxLine>
+              </div>
+          </div>
+          <div className="sign">
+            <div className="signup"></div>
+            <Button text="Créer un compte" logoSrc="" className="button" backgroundColor="#5BAB2C" color="#fff"/>
           </div>
         </div>
       </div>

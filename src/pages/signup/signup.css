@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 16px;
 }
 
 .singupButton-wrapper .button {
@@ -39,7 +40,7 @@
     overflow-y: auto;
   }
 
-.accountDetailTitle, .contactDetailTitle{
+.accountDetailTitle, .contactDetailTitle, .preferencesDetailTitle, .signup {
     width: 100%;
     display: flex;
     text-align: left;
@@ -60,4 +61,22 @@
     margin-top: -10px;
     text-align: left;
     font-size: 10px;
+}
+
+.preferences {
+    margin-bottom: 16px;
+}
+
+.checkBox {
+    text-align: left;
+}
+
+.sign Button {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.preferences .checkbox-text {
+padding-top: 18px;
 }

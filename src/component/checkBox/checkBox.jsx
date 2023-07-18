@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './checkBox.css';
 
-const CheckboxLine = () => {
+const CheckboxLine = ({ texte, forgot }) => {
   const [checked, setChecked] = useState(false);
 
   return (
@@ -12,9 +12,9 @@ const CheckboxLine = () => {
           checked={checked}
           onChange={() => setChecked(!checked)}
         />
-        Se souvenir de moi
+        <span className="checkbox-text">{texte}</span>
       </label>
-      <a href="/forgot-password">Mot de passe oublié?</a>
+      <a href="/forgot-password">{forgot}</a>
     </div>
   );
 };
